@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cookies Canvas/Menu</title>
+    </head>
+
+<body>
+    <section class="order-apps-section">
+  <div class="text-content">
+    <h2 class="section-title">You can order through apps</h2>
+    <p class="section-description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit enim bibendum sed et aliquet aliquet risus tempor semper.
+    </p>
+  </div>
+
+  <div class="apps-grid">
+    <div class="app-item">
+      <img src="path/to/uber_eats_logo.png" alt="Uber Eats" class="app-logo">
+      <span class="app-name">Uber Eats</span>
+    </div>
+    <div class="app-item">
+      <img src="path/to/grubhub_logo.png" alt="Grubhub" class="app-logo">
+      <span class="app-name red-text">GRUBHUB</span>
+    </div>
+    <div class="app-item">
+      <img src="path/to/postmates_logo.png" alt="Postmates" class="app-logo">
+      <span class="app-name">Postmates</span>
+    </div>
+    <div class="app-item">
+      <img src="path/to/doordash_logo.png" alt="DoorDash" class="app-logo">
+      <span class="app-name">DOORDASH</span>
+    </div>
+    <div class="app-item">
+      <img src="path/to/foodpanda_logo.png" alt="Foodpanda" class="app-logo">
+      <span class="app-name">foodpanda</span>
+    </div>
+    <div class="app-item">
+      <img src="path/to/deliveroo_logo.png" alt="Deliveroo" class="app-logo">
+      <span class="app-name">deliveroo</span>
+    </div>
+    <div class="app-item">
+      <img src="path/to/instacart_logo.png" alt="Instacart" class="app-logo">
+      <span class="app-name">instacart</span>
+    </div>
+    <div class="app-item">
+      <img src="path/to/just_eat_logo.png" alt="Just Eat" class="app-logo">
+      <span class="app-name red-text">JUST EAT</span>
+    </div>
+    <div class="app-item">
+      <img src="path/to/didi_food_logo.png" alt="DiDi Food" class="app-logo">
+      <span class="app-name">DiDi Food</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .order-apps-section {
+  display: flex; /* Use flexbox to put text-content and apps-grid side-by-side */
+  justify-content: center; /* Center the entire section content */
+  align-items: center; /* Vertically align items in the middle */
+  padding: 80px 40px; /* Add some vertical and horizontal padding */
+  background-color: #f8f8f8; /* Light background color for the section */
+  gap: 80px; /* Space between the text block and the apps grid */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* --- Left Text Content Styling --- */
+.text-content {
+  flex: 0 0 400px; /* Give it a fixed width, but allow it to shrink if needed */
+  max-width: 100%; /* Ensure it doesn't overflow on small screens */
+  text-align: left; /* Align text to the left */
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif; /* Assuming a similar elegant font */
+  font-size: 44px; /* Adjust font size as needed */
+  color: #333333; /* Dark text color */
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-family: 'Open Sans', sans-serif; /* A more neutral font for body text */
+  font-size: 16px;
+  color: #6c757d; /* Muted gray for description */
+  line-height: 1.6;
+  max-width: 400px; /* Limit width for readability */
+}
+
+/* --- Right Apps Grid Styling --- */
+.apps-grid {
+  display: grid; /* Use CSS Grid for the 3x3 layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns, equal width */
+  gap: 20px; /* Space between the app items */
+}
+
+.app-item {
+  display: flex; /* Flexbox for aligning logo and text inside each item */
+  flex-direction: column; /* Stack logo and text vertically */
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* White background for each app card */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside each card */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  min-width: 150px; /* Minimum width for app item */
+  min-height: 100px; /* Minimum height for app item */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+}
+
+.app-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+.app-logo {
+  max-width: 80px; /* Max width for logos */
+  height: auto;
+  margin-bottom: 10px; /* Space between logo and name */
+}
+
+.app-name {
+  font-family: 'Open Sans', sans-serif; /* Or your preferred sans-serif font */
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333; /* Default text color */
+  text-align: center;
+}
+
+/* Specific styling for red text in logos like Grubhub */
+.app-name.red-text {
+  color: #E21B3C; /* A vibrant red, adjust as needed */
+  font-weight: 800; /* Make it bolder */
+  text-transform: uppercase; /* For GRUBHUB, JUST EAT */
+  font-size: 16px; /* Slightly larger for emphasis */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+  .order-apps-section {
+    flex-direction: column; /* Stack text and grid vertically on smaller screens */
+    text-align: center; /* Center text content */
+    gap: 40px;
+  }
+
+  .text-content {
+    flex: none; /* Remove fixed flex width */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .section-description {
+    margin-left: auto;
+    margin-right: auto; /* Center the description paragraph */
+  }
+
+  .apps-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .order-apps-section {
+    padding: 50px 20px;
+  }
+  .section-title {
+    font-size: 36px;
+  }
+  .apps-grid {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+  .app-item {
+    min-width: unset; /* Remove min-width for app items */
+  }
+}
+</style>
+
+</body>
+</html>

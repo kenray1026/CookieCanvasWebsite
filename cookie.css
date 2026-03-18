@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*------------------LOG IN PAGE------------------*/
+.login-body{
+    background-image: url('logInPage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    background: rgb(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 40px 50px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgb(0, 0, 0, 0.2);
+    width: 350px notes
+}
+
+.login-container h1 {
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+.login-container button {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #a0522d;
+}
+
+.small-text {
+    font-size: 0.9em;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+/*------------------MAIN PAGE------------------*/
+.mainPage-body {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #8B4513;
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 50%;
+}
+
+.logo-container img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f5d6a1;
+}
+
+.nav-links .active a {
+    background-color: #e0e6d6;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #333;
+}
+
+
+
+
+.logout {
+    background-color: #fff8dc;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+ add this 
+.nav-links a.logout {
+  color: black;
+}
+
+.logout:hover {
+  background-color: #f3e5ab;
+}
+  
+
+/*Section 1*/
+.hero {
+    background-image: url('cookies2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.shop-btn {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.shop-btn:hover {
+    background-color: #a0522d;
+}
+
+/* Section 2 */
+.testimonials {
+    background-color: whitesmoke;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #8B4513;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial { /*box*/
+    background: #fff;
+    border: 2px solid #f5d6a1;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 25px 20px;
+    transition: transform 0.3s ease, box-shadox 0.3 ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial p {
+    color: #5c3d2e;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.testimonial span {
+    color: #8B4513;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.footer {
+  background: #000;
+  color: gray;
+  padding: 20px 0;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  width: 100%;
+  position: relative; /* or fixed if you want it always visible */
+  bottom: 0;
+  left: 0;
+  margin-top: 50px;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px 0;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+/* Responsive footer */
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .footer .row a i {
+    margin: 0 5%;
+  }
+}
+
+
+/*------------------MENU PAGE------------------*/
+/* Product Section */
+.product-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product-section h2 {
+    color: #a0522d;
+    margin-bottom: 30px;
+}
+
+.section-description {
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.product-card { /*Card sa 3*/
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.product-card h3 {
+    color: #5c4033;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    color: #8B4513;
+    font-size: 14px;
+}
+
+.product-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #8B4513;
+}
+
+
+.product-section h2 {
+    font-size: 3.5em;
+}
+
+.product-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #a0522d;
+}
+
+/*------------------ABOUT PAGE------------------*/
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 10%;
+    background-color: white;
+}
+
+.about-image img {
+    width: 380px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    max-width: 500px;
+    color: #333;
+}
+
+.about-content h2 {
+    font-size: 1.8em;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-card {
+    background-color: #2b2b2b;
+    color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    width: 72%;
+}
+
+.contact-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.contact-card p {
+    margin: 8px 0;
+    font-size: 0.95em;
+    color: lightgrey;
+}
